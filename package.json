@@ -1,0 +1,29 @@
+{
+  "name": "@superfleb/abortable",
+  "packageManager": "yarn@4.5.2",
+  "version": "0.1.0",
+  "description": "Abortable timeout (setAbortableTimeout) and interval (setAbortableInterval)",
+  "import": "./dist/index.js",
+  "require": "./dist/imdex.cjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json ; tsc -p tsconfig.cjs.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperFLEB/abortable.git"
+  },
+  "author": "FLEB (a.k.a. SuperFLEB)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuperFLEB/abortable/issues"
+  },
+  "homepage": "https://github.com/SuperFLEB/abortable#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  }
+}

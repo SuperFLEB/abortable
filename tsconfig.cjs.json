@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "target": "es2020",
+    "module": "amd",
+    "outFile": "./dist/index.cjs",
+  }
+}
