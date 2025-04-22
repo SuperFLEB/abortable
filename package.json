@@ -3,9 +3,18 @@
   "packageManager": "yarn@4.5.2",
   "version": "0.1.0",
   "description": "Abortable timeout (setAbortableTimeout) and interval (setAbortableInterval)",
-  "import": "./dist/index.js",
-  "require": "./dist/imdex.cjs",
-  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json ; tsc -p tsconfig.cjs.json",
     "test": "jest"
